@@ -9,7 +9,7 @@ let jsurl = 'output.js'
 // 导出数据的文件夹
 let dir = './exports'
 // 生成的js文件的变量名
-let jsvar = 'var data='
+let jsvar = 'var dataJson='
 
 /**
  * @description: 提取json
