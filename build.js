@@ -11,7 +11,7 @@ let dir = './exports'
 // 生成的js文件的变量名
 let jsvar = 'var dataJson='
 // 图片导出的位置 '' => 'photos/photo……'
-let imgurl = ''
+let imgurl = './'
 
 /**
  * @description: 提取json
