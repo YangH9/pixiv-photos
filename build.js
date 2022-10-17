@@ -10,6 +10,8 @@ let jsurl = 'output.js'
 let dir = './exports'
 // 生成的js文件的变量名
 let jsvar = 'var dataJson='
+// 图片导出的位置 '' => 'photos/photo……'
+let imgurl = ''
 
 /**
  * @description: 提取json
@@ -33,7 +35,7 @@ fs.readdirSync(dir).forEach((res) => {
         // 处理json
         data = data?.messages.filter((item) => item.photo).map((item) => {
           let oldPath = path.join(dir1, item.photo)
-          let newPath = path.join(item.photo)
+          let newPath = path.join(imgurl, item.photo)
           renameFile(oldPath, newPath)
           return { from: item.from, photo: item.photo }
         })
