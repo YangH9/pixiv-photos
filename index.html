@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>pixiv-photos</title>
+  </head>
+  <body>
+    <script src="//2252964209.github.io/result.js"></script>
+    <script>
+      document.write(
+        dataJson.messages
+          .map((item) => `<img width="150" src="${v.photo}">`)
+          .join("")
+      );
+    </script>
+  </body>
+</html>
